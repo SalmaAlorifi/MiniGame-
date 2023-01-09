@@ -18,8 +18,8 @@ extension Toy{
         Toy(id: 2, color: .blue),
         Toy(id: 3, color: .green),
         Toy(id: 4, color: .black),
-        Toy(id: 5, color: .orange),
-        Toy(id: 6, color: .purple)
+        Toy(id: 5, color: .yellow),
+        Toy(id: 6, color: .pink)
     
     
     

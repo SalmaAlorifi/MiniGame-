@@ -52,7 +52,7 @@ struct BabyToyView: View {
         }
         .alert(
      
-            Text("Congratulations, you won! 🎉"),
+            Text("Congratulations, you won! "),
             isPresented: $viewModel.isGameOver,
             actions: {
                 Button("Close") {

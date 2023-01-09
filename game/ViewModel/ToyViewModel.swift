@@ -10,7 +10,7 @@ import SwiftUI
 
 
 class ToyViewModel: ObservableObject {
-    // MARK: - Gesture Properties
+    // MARK:  Gesture Properties
     @Published var currentToy: Toy?
     @Published var currentPosition = initialPosition
     @Published var highlightedId: Int?
@@ -18,18 +18,18 @@ class ToyViewModel: ObservableObject {
     @Published var isGameOver = false
     private(set) var attempts = 0
     
-    // MARK: - Coordinates
+    // MARK:  Coordinates
     private static let initialPosition = CGPoint(
         x: UIScreen.main.bounds.midX,
         y: UIScreen.main.bounds.maxY - 100
     )
     private var frames: [Int: CGRect] = [:]
     
-    // MARK: - Objects in the screen
+    // MARK:  Objects in the screen
     private var toys = Array(Toy.all.shuffled().prefix(upTo: 3))
     var toyContainers = Toy.all.shuffled()
     
-    // MARK: - Game lifecycle
+    // MARK: -Game lifecycle
     func confirmWhereToyWasDropped() {
         defer { highlightedId = nil }
         
